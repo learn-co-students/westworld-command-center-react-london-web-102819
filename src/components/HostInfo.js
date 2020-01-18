@@ -9,7 +9,7 @@ function HostInfo({editSelectedHost, selectedHost, areas}) {
         return name.split("_").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
     }
 
-    const {firstName, imageUrl, active, area, gender} = selectedHost;
+    const {firstName, imageUrl, active, gender} = selectedHost;
 
     return (
         <Grid>

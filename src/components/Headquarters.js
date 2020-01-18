@@ -5,7 +5,7 @@ import Details from './Details'
 import ColdStorage from './ColdStorage.js';
 import LogPanel from './LogPanel.js';
 
-function Headquarters({editSelectedHost, areas, setSelectedHost , selectedHost, hosts}) {
+function Headquarters({anyInactive, logs, editSelectedHost, areas, setSelectedHost, toggleAll, selectedHost, hosts}) {
 
     return(
         <Grid celled='internally'>
@@ -19,7 +19,7 @@ function Headquarters({editSelectedHost, areas, setSelectedHost , selectedHost, 
             </Grid.Column>
             <Grid.Column width={3}>
 
-                <LogPanel />
+                <LogPanel toggleAll = {toggleAll} anyInactive = {anyInactive} logs = {logs} />
 
             </Grid.Column>
         </Grid>
